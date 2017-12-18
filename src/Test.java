@@ -9,7 +9,7 @@ public class Test {
         ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
         IUserService service = context.getBean("userService", UserServiceImpl.class);
         User user = new User();
-        user.setName("exception");
+        user.setName("test2");
         service.save(user);
     }
 }
