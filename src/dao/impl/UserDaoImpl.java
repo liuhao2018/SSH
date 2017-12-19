@@ -6,18 +6,18 @@ import org.springframework.orm.hibernate5.support.HibernateDaoSupport;
 import org.springframework.transaction.annotation.Transactional;
 import java.util.List;
 
-@Transactional
+/**
+ * @author liuhao
+ */
+@Transactional(rollbackFor = Exception.class)
 public class UserDaoImpl extends HibernateDaoSupport implements IUserDao {
     @Override
     public void save(User user) {
         super.getHibernateTemplate().save(user);
-        throw new RuntimeException("exception");
     }
 
     @Override
     public void delete(Long id) {
-        User user = new User();
-        user.setId(id);
         super.getHibernateTemplate().delete(id);
     }
 

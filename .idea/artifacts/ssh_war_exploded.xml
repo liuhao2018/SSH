@@ -1,7 +1,7 @@
 <component name="ArtifactManager">
-  <artifact type="exploded-war" name="ssh:war exploded">
+  <artifact type="war" name="ssh:war exploded">
     <output-path>$PROJECT_DIR$/out/artifacts/ssh_war_exploded</output-path>
-    <root id="root">
+    <root id="archive" name="ssh_war exploded.war">
       <element id="javaee-facet-resources" facet="ssh/web/Web" />
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
@@ -15,6 +15,13 @@
           <element id="library" level="project" name="commons-pool-1.6" />
           <element id="library" level="project" name="mysql-connector-java-6.0.6" />
           <element id="library" level="project" name="aspectjweaver-1.8.11" />
+          <element id="library" level="project" name="el-api" />
+          <element id="library" level="project" name="struts2-spring-plugin-2.3.34" />
+          <element id="library" level="project" name="tomcat-api" />
+          <element id="library" level="project" name="tomcat-util" />
+          <element id="library" level="project" name="spring-web-4.3.13.RELEASE" />
+          <element id="library" level="project" name="jsp-api" />
+          <element id="library" level="project" name="servlet-api" />
         </element>
       </element>
     </root>

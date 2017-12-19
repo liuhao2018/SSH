@@ -6,6 +6,9 @@ import service.IUserService;
 
 import java.util.List;
 
+/**
+ * @author liuhao
+ */
 public class UserServiceImpl implements IUserService {
 
     private IUserDao userDao;
